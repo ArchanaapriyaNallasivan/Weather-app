@@ -1,0 +1,209 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/searchImageButton"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Enter the City Name"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/searchImageButton"
+        android:layout_width="81dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/updated_field"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-105dp"
+        android:background="@null"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/min_temperature"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/max_temperature"
+        android:layout_marginTop="264dp"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/clouds_field"
+        android:layout_width="141dp"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/weather_icon"
+        android:layout_alignStart="@+id/min_temperature"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/humidity_field"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/min_temperature"
+        android:layout_marginBottom="273dp"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/max_temperature"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="211dp"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/weather_icon"
+        android:layout_width="185dp"
+        android:layout_height="201dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="21dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="150sp" />
+
+    <ImageView
+        android:id="@+id/maxTempImg"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/max_temperature"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/max_temp" />
+
+    <ImageView
+        android:id="@+id/cloudsImg"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/clouds_field"
+        app:srcCompat="@drawable/clouds" />
+
+    <ImageView
+        android:id="@+id/humidityImg"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/humidity_field"
+        android:textAlignment="center"
+        app:srcCompat="@drawable/humidity" />
+
+    <ImageView
+        android:id="@+id/minTempImg"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/min_temperature"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/min_temp" />
+
+    <TextView
+        android:id="@+id/city_field"
+        android:layout_width="177dp"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="149dp"
+        android:layout_toStartOf="@+id/weather_icon"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/current_temperature_field"
+        android:layout_width="139dp"
+        android:layout_height="78dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/city_field"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="-148dp"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/main_weather_field"
+        android:layout_width="178dp"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_toStartOf="@+id/weather_icon"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/details_field"
+        android:layout_width="178dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_toStartOf="@+id/weather_icon"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/updated_field"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/emptyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/updated_field"
+        android:layout_below="@id/editText"
+        android:text="
+
+
+
+
+
+"/>
+
+</RelativeLayout>
